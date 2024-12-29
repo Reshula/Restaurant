@@ -9,11 +9,13 @@ const Dish = ({dish}) =>{
     const dispatch = useDispatch();
    
     return(
-        <div >
-            <img src={`./${dish.img}.jpg`} alt="food"/>
+        <div className="dish-card">
+           <img src={`./${dish.img}.jpg`} alt="food"/>
            <h2>{dish.name}</h2>
            <p> $ {dish.price}</p>
+           <div className="quantity-container">
            <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
+           </div>
            <button onClick={() => {dispatch(addItemToCart({dish, quantity}))}}>Add To Cart</button>
           
            
@@ -21,3 +23,12 @@ const Dish = ({dish}) =>{
     )
 }
 export default Dish;
+
+
+
+
+
+
+
+
+       

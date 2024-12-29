@@ -132,11 +132,11 @@ const dataDishes = [
   
     price: 15,
   
-    img: 'tomatosalad',
+    img: 'toa-heftiba',
   
-    name: 'Tomato Salad',
+    name: 'Toa-heftiba',
   
-    category: 'SALADS'
+    category: 'DESSERT'
   
   },
   
@@ -146,11 +146,11 @@ const dataDishes = [
   
     price: 15,
   
-    img: 'feta',
+    img: 'camila',
   
-    name: 'Feta Salad',
+    name: 'Camila',
   
-    category: 'SALADS'
+    category: 'DESSERT'
   
   }
   

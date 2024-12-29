@@ -1,38 +1,181 @@
-.App {
+/* Стили для всего контейнера категорий */
+.all-categories {
   text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom, #fff, #f9f9f9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Стилизация заголовка */
+.all-categories h1 {
+  font-size: 36px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Контейнер для фильтров */
+.categories-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Кнопки фильтров */
+.filter-button {
+  padding: 12px 25px;
+  border: 2px solid #4caf50;
+  background-color: transparent;
+  color: #4caf50;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Стиль кнопки при наведении */
+.filter-button:hover {
+  background-color: #4caf50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Стиль для активной категории */
+.filter-button.selected {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+.all-categories {
+  text-align: center;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categories-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.filter-button.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}
+.dishes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.dishes-container .dish-card {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  box-sizing: border-box;
+}
+/* Стили для карточки блюда */
+.dish-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для изображения блюда */
+.dish-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Название блюда */
+.dish-card h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Цена блюда */
+.dish-card p {
+  font-size: 1.2rem;
+  color: #FF5733;
+  margin-bottom: 15px;
+}
+
+/* Стили для кнопки */
+.dish-card button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dish-card button:hover {
+  background-color: #e24e2b;
+}
+
+/* Стили для компонента Quantity */
+.dish-card .quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dish-card .quantity-container p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dish-card .quantity-container button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dish-card .quantity-container button:hover {
+  background-color: #ccc;
 }

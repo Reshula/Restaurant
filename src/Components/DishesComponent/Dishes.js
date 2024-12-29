@@ -8,7 +8,7 @@ const Dishes = () => {
 
 
     return(
-        <div >
+        <div className="dishes-container">
             {dataDishes.filter(dish =>{
                 if (selectedCategory=== 'ALL') return true
                 return selectedCategory === dish.category

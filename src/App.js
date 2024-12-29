@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <div className='block'>
       <AllCategories />
-     
       <Cart />
       </div>
       <div className='block'>

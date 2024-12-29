@@ -9,7 +9,7 @@ const CartItem = ({cartItem}) => {
     
 
     return(
-        <div>
+        <div className="cart-item">
           <p>{dishes.name}</p>
           <p> {cartItem.quantity} portion(s)</p>
           <p>Price: $ {dishes.price*cartItem.quantity}</p>
